@@ -95,7 +95,15 @@ export default function SelectPage() {
           <span className="text-xs text-gray-400">또는</span>
           <div className="flex-1 h-px bg-gray-200" />
         </div>
-
+{/* Bottom actions */}
+        <div className="grid grid-cols-2 gap-3">
+          <button
+            onClick={() => window.location.href = '/order-status'}
+            className="h-14 bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-semibold text-sm rounded-2xl shadow-sm shadow-emerald-200 transition-colors flex items-center justify-center gap-2"
+          >
+            <ListChecks size={18} />
+            주문현황
+          </button>
         {/* Admin login */}
         <button
           onClick={() => window.location.href = ADMIN_PATH}
